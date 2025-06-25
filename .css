@@ -1,0 +1,229 @@
+.main-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 2px 24px rgba(171, 33, 140, 0.07);
+  min-height: 100vh;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* (Rest of your existing styles below) */
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+  background: #fffafc;
+  color: #30182a;
+  line-height: 1.6;
+}
+a {
+  color: #ab218c;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  background: #fff;
+  border-bottom: 2px solid #f4e2ee;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ab218c;
+  letter-spacing: 1.5px;
+}
+.logo .org {
+  color: #30182a;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links li a {
+  color: #30182a;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+.nav-links li a.active,
+.nav-links li a:hover {
+  background: #f9e1f4;
+  color: #ab218c;
+}
+.social a {
+  color: #ab218c;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+  transition: color 0.2s;
+}
+.social a:hover {
+  color: #30182a;
+}
+
+.hero {
+  background: linear-gradient(90deg, #f9e1f4 0%, #fff 100%);
+  text-align: center;
+  padding: 4rem 2rem 2rem 2rem;
+}
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #ab218c;
+}
+.tagline {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #30182a;
+  margin-top: 0;
+}
+
+.about {
+  padding: 3rem 2rem 2rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+.about h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1.3rem;
+  color: #ab218c;
+  letter-spacing: 0.5px;
+}
+.needs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.need-item {
+  background: #f9e1f4;
+  padding: 1.5rem 1.2rem;
+  border-radius: 14px;
+  flex: 1 1 220px;
+  min-width: 220px;
+  max-width: 320px;
+  box-shadow: 0 2px 10px rgba(171, 33, 140, 0.05);
+}
+.need-item h3 {
+  color: #ab218c;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.join {
+  padding: 3rem 2rem 2rem 2rem;
+  background: #fffafc;
+  text-align: center;
+}
+.join h2 {
+  font-size: 1.6rem;
+  color: #ab218c;
+  margin-bottom: 1rem;
+}
+.join-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem auto 0 auto;
+  max-width: 410px;
+  gap: 0.8rem;
+}
+.join-form input,
+.join-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #f4e2ee;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: none;
+  font-family: inherit;
+}
+.join-form textarea {
+  min-height: 80px;
+}
+.join-form button {
+  background: #ab218c;
+  color: #fff;
+  padding: 12px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+  margin-top: 0.3rem;
+  transition: background 0.2s;
+}
+.join-form button:hover {
+  background: #30182a;
+}
+.contact-note {
+  margin-top: 1.3rem;
+  color: #30182a;
+}
+.contact-note a {
+  color: #ab218c;
+  font-weight: 500;
+}
+.contact-note a:hover {
+  color: #30182a;
+  text-decoration: underline;
+}
+
+footer {
+  background: #fff;
+  border-top: 2px solid #f4e2ee;
+  padding: 1rem 0 1.2rem 0;
+  margin-top: 2rem;
+}
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #30182a;
+  font-size: 1rem;
+  padding: 0 2rem;
+}
+.footer-social a {
+  color: #ab218c;
+  font-size: 1.25rem;
+  margin-left: 0.8rem;
+  transition: color 0.2s;
+}
+.footer-social a:hover {
+  color: #30182a;
+}
+
+@media (max-width: 780px) {
+  .main-container,
+  .nav-container,
+  .footer-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .needs-list {
+    flex-direction: column;
+  }
+  .hero {
+    padding: 3rem 1rem 1rem 1rem;
+  }
+}
